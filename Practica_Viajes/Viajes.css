@@ -1,0 +1,154 @@
+
+body{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 22px;
+    background-color: #ff9fcf ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2{
+    text-align: center;
+    font-size: 2.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(23, 0, 124);
+    border-color: black;
+    border: 6px double rgb(0, 125, 6);
+    
+}
+
+#menu {
+    background-color: #e8ff53;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    border: dashed black 2px;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 50px;
+    
+}
+
+#menu li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    color: mediumblue;
+}
+
+table{
+    text-align: center;
+}
+
+#Hoteles{
+   
+    font-size: 25px;
+    text-align: center;
+}
+
+#Hoteles table{
+    width: 90%;
+    font-size: 25px;
+    margin: 0 auto 0 20px;
+    background-color: rgb(220, 255, 106);
+    border: #ff0a0a 3px solid;
+}
+
+
+table, tr, th, td{
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    
+}
+
+
+#Inicio{
+
+    display: flex;
+    
+}
+
+
+.texto1{
+   
+    padding: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+#Restaurantes a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+#Restaurantes a:hover{
+    color:#ff0a0a;
+}
+
+#Restaurantes{
+    font-size: 22px;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(30, 0, 255);
+
+}
+
+h3:hover{
+    cursor: progress;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(30, 0, 255);
+}
+
+
+ol p li{
+
+    font-size: 22px;
+    
+}
+
+h1:hover{
+    color:  #ff2d00 ;
+    cursor: crosshair;
+}
+
+ol li{
+    list-style-image: url(corazon.png) ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+.cabecera1{
+    text-transform: uppercase;
+    font-style: italic;
+    
+
+}
+
+
+
+
+
