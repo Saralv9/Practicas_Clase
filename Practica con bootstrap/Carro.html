@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="carro.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>TIENDA DE ZAPATILLAS</h1>
+
+		<!-- Icono del carrito de compras -->
+		<div class="container-icon">
+			<svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+				stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round"
+					d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+			</svg>
+			<!-- Productos del carrito -->
+			<div class="count-products">
+				<span id="contador-productos">0</span>
+			</div>
+			<!-- Contenido del carrito de compras -->
+			<div class="container-cart-products hidden-cart">
+				<div class="cart-product">
+					<div class="info-cart-product">
+						<p class="titulo-producto-carrito"></p>
+					</div>
+					<svg class="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</div>
+				<!-- Total a pagar -->
+				<div class="cart-total">
+					<h3>Total:</h3>
+					<span class="total-pagar">0€</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Sección de productos para mujer -->
+
+	<h1 id="zapatillas-mujer">ZAPATILLAS DE MUJER</h1>
+	<div class="card-group">
+		<div class="card">
+			<img src="https://www.thedarksideinitiative.com/cdn/shop/articles/Nike-AJ1-HyperRoyal-IG-1_345x345@2x.jpg"
+				class="card-img-top" alt="producto">
+			<div class="card-body">
+				<h2 class="card-title">Nike Air Jordan 1 High "Hyper Royal"</h2>
+				<p class="card-text">El Air Jordan 1 Retro High OG Hyper Royal es un calzado icónico diseñado por Nike.
+					Con un acabado elegante en azul claro y contrastes en blanco, representa la esencia Royal del
+					baloncesto. Hecho de material de cuero de alta calidad, ofrece la máxima durabilidad y confort.
+					Incluye logotipo de Nike Air en la lengüeta y logo Jordan Wings en el lateral, manteniendo la
+					estética clásica. Cuenta con tecnología Nike Air, garantizando un mayor soporte y amortiguación.</p>
+				<p class="price">800€</p>
+				<button>Añadir al carrito</button>
+			</div>
+			<div class="card-footer">
+				<small class="text-body-secondary">Actualizado hace 2 minutos</small>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//102/MTA-38601479/no_brand_nike_air_jordan_1_retro_high_dior_fullset_bnib_high_grade_guarantee_full01_lth45bgb.jpg"
+				class="card-img-top" alt="producto">
+			<div class="card-body">
+				<h2 class="card-title">Zapatillas Nike Air Jordan 1</h2>
+				<p class="card-text">El Dior x Air Jordan 1 High es la colaboración icónica entre la marca de moda de
+					lujo y la leyenda de la ropa deportiva que conoces y amas.</p>
+				<p class="price">20000€</p>
+				<button>Añadir al carrito</button>
+			</div>
+			<div class="card-footer">
+				<small class="text-body-secondary">Actualizado hace 3 minutos</small>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://images.stockx.com/images/New-Balance-530-Silver-Khaki.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1658218479&q=60"
+				class="card-img-top" alt="producto">
+			<div class="card-body">
+				<h2 class="card-title">New Balance 530 Silver Khaki</h2>
+				<p class="card-text">El New Balance 530 White Silver Navy es sin duda uno de los mejores candidatos para
+					estar a la moda, con su aspecto robusto muy valorado. Este modelo combina malla ligera y
+					transpirable con paneles de cuero blanco, dándole un toque contemporáneo a una silueta de tenis..
+				</p>
+				<p class="price">120€</p>
+				<button>Añadir al carrito</button>
+			</div>
+			<div class="card-footer">
+				<small class="text-body-secondary">Actualizado hace 4 minutos</small>
+			</div>
+		</div>
+	</div>
+
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://i.ebayimg.com/images/g/-qAAAOSw5MllG8gS/s-l1600.jpg" class="card-img-top"
+					alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">Adidas Originals Campus 00s </h2>
+					<p class="card-text">Destaca con un estilo chunky con estos tenis Campus 00s para hombre de adidas
+						Originals. Inspiradas en la escena del hip hop en Tokio, estas zapatillas de deporte de corte
+						ancho tienen una parte superior de piel de ante duradera y un cuello y lengüeta acolchados para
+						un ajuste cómodo. Están colocados sobre una entresuela acolchada para una pisada suave, mientras
+						que la suela exterior de goma Gum agrega una tracción esencial. El diseño es de color Core
+						negro. Están rematados con el logo 3-Stripes</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 5 minutos</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/be267c0d2b55486f98beacfd01049bfc_9366/Zapatilla_Forum_Low_Blanco_FY7978_01_standard.jpg"
+					class="card-img-top" alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">Zapatilla Forum Low</h2>
+					<p class="card-text">Los 80 fueron la década prodigiosa del baloncesto, y la adidas Forum no tardó
+						en convertirse en una leyenda, primero sobre el parqué y luego en las calles. Esta zapatilla
+						para jóvenes con estilo presenta una parte superior de piel, una suela robusta y una correa de
+						velcro en el tobillo. Siente la energía desbordante de esta época cada vez que te la pongas.
+					</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 6 minutos</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://cdn2.fuikaomar.es/53314-medium_default/nike-air-force-one-low-valentines-day.jpg"
+					class="card-img-top" alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">Air Force de San Valentín</h2>
+					<p class="card-text">Las Nike Air Force de San Valentín son más románticas que una rosa, pero menos
+						que un anillo de diamantes GQ España.</p>
+					<p class="price">100€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 10 minutos</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<h1 id="zapatillas-hombre">ZAPATILLAS DE HOMBRE</h1>
+	</br>
+
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/3f3e7049-5c99-428c-abcd-e246b086f2ed/air-force-1-07-zapatillas-VJhk3P.png"
+					class="card-img-top" alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">Adidas Originals Campus 00s </h2>
+					<p class="card-text">El fulgor sigue vivo con un diseño de baloncesto original. Con un diseño que
+						combina la comodidad para la cancha con un estilo urbano, estas zapatillas dan un nuevo giro a
+						su ya característico estilo, su confección inspirada en los 80, sus detalles llamativos y su
+						estilo impecable</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 30 minutos</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://http2.mlstatic.com/D_NQ_NP_813798-MLC40030564860_122019-W.jpg" alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Zapatilla Forum Low</h2>
+					<p class="card-text">Son zapatillas de alta gama exclusivas de la marca Jordan. Caracterizadas por
+						su diseño sofisticado, combinan tonos negros con azules universitarios, ofreciendo un aspecto
+						contemporáneo y llamativo. Están confeccionadas con materiales de alta calidad para proporcionar
+						comodidad y durabilidad. Además, cuentan con el emblemático logo de Jordan, asegurando su
+						autenticidad. Ideales para los amantes de la moda deportiva y los seguidores incondicionales de
+						la marca.
+					</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 1 hora</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://m.media-amazon.com/images/I/61HcA++bNJL._AC_UY900_.jpg" alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Nike mens Air Jordan 1 Retro High OG</h2>
+					<p class="card-text">Es una réplica exacta de un modelo de sneaker fabricado hace años y relanzado
+						debido a su alta demanda. Original o OG. Como su propio nombre indica, un OG es un par original
+						de un modelo determinado. O sea, que no es un retro o reedición, sino un par fabricado cuando se
+						lanzó el modelo por primera vez.</p>
+					<p class="price">100€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 3 horas</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://http2.mlstatic.com/D_NQ_NP_797416-CBT46681298882_072021-W.jpg" class="card-img-top"
+					alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">Nike air max airmax tn plus </h2>
+					<p class="card-text">Nike air max airmax tn plus Zapatos turned III plus zapatillas para correr de
+						alta calidad para hombre, mujer, láser azul tigre, todas las nike air max airmax tn plus Zapatos
+						turned III plus</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 10 horas</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/49d6a0ba-d3c1-4d5f-b93f-b09af0c662ef/air-force-1-07-zapatillas-npDqNV.png"
+					alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Nike Air Force 1 '07</h2>
+					<p class="card-text">Las Nike Air Max Plus III combinan la cómoda tecnología Tuned Air con un diseño
+						enérgico famoso por sus predecesoras. Las III actualizan el look con detalles de TPU fusionados
+						en la parte superior, al tiempo que rinden homenaje a la icónica coloración.
+					</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado ayer</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://resize.sprintercdn.com/f/512x512/products/0374187/nike-initiator_0374187_00_4_3195106576.jpg?w=768&q=75"
+					alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Nike Initiator</h2>
+					<p class="card-text">Nike Initiator. Estas zapatillas deportivas son perfectas para los
+						entrenamientos diarios. Su suela de goma y su ajuste cómodo te permitirán alcanzar tus objetivos
+						con la máxima comodidad. </p>
+					<p class="price">80€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 1 dia</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<br>
+	<br>
+	<h1 id="zapatillas-niño/a">ZAPATILLAS DE NIÑO/A</h1>
+	</br>
+
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://www.thesneakerone.com/39253-large_default/AIR-JORDAN-1-MID-WHITE-GYM-RED-BLACK-AR6352-122.jpg"
+					class="card-img-top" alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">AIR JORDAN 1 MID </h2>
+					<p class="card-text">Cómodas, duraderas y atemporales: las AF1 son las número 1 de la afición por
+						una razón. El diseño clásico de los 80 se combina con detalles llamativos para conseguir un
+						estilo perfecto tanto en la cancha como fuera de ella.</p>
+					<p class="price">50€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 2 dias</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://m.media-amazon.com/images/I/71YjXgSTrxL._AC_UF894,1000_QL80_.jpg" alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">HealHeatersⓇ Zapatos De Roller, Zapatillas Ruedas Dobles Running</h2>
+					<p class="card-text">Espacio interior confortable: El tipo de material interior es una red
+						transpirable, diseñada para conseguir un alto grado de ventilación y muy confortable. No se
+						apoya en el pie y puede proteger mejor sus pies
+					</p>
+					<p class="price">120€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 3 dias</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://m.media-amazon.com/images/I/61lXluFpHWL._AC_UY580_.jpg" alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Zapatillas Ruedas niña y niño Zapatillas con Luces</h2>
+					<p class="card-text">Zapatillas Ruedas niña y niño Zapatillas con Luces niña Zapatos con Ruedas LED
+						Roller Skate Shoes Zapatos Brillantes Se Puede con Ruedas Automática Calzado de Skateboarding
+					</p>
+					<p class="price">100€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 1 semana</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://www.izapatillas.com/33379-large_default/zapatilla-puma-multiflex-sl-nino-380740-06-blanca.jpg"
+					class="card-img-top" alt="producto">
+				<div class="card-body">
+					<h2 class="card-title">ZAPATILLA PUMA MULTIFLEX SL</h2>
+					<p class="card-text">Zapatilla Puma Multiflex para niño en piel sintética con dos velcros e interior
+						de textil para una mayor comodidad</p>
+					<p class="price">115€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 2 semanas</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src="https://media.atmosferasport.es/297929-thickbox_default/zapatillas-de-futbol-sala-adidas-super-sala-2-nino.jpg"
+					alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Zapatillas de Fútbol Sala adidas Super Sala 2 Niño</h2>
+					<p class="card-text">Las Nike Air Max Plus III combinan la cómoda tecnología Tuned Air con un diseño
+						enérgico famoso por sus predecesoras. Las III actualizan el look con detalles de TPU fusionados
+						en la parte superior, al tiempo que rinden homenaje a la icónica coloración.
+					</p>
+					<p class="price">70€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 3 semanas</small>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card h-100">
+				<img src=https://www.centrosport.es/uploads/photo/image/3114/gallery_003287_1.JPG alt="producto" />
+				<div class="card-body">
+					<h2 class="card-title">Zapatillas Niña Nike MD Runner 2 VF</h2>
+					<p class="card-text">La zapatilla MD Runner 2 VF TDV es uno de los modelos más interesantes de Nike.
+						Estilo casual, este zapato destaca por su color crema que, junto con los diferentes colores que
+						llenan el logotipo y acompañan el contorno, le da brillo y clase a su huella.</p>
+					<p class="price">36€</p>
+					<button>Añadir al carrito</button>
+				</div>
+				<div class="card-footer">
+					<small class="text-body-secondary">Actualizado hace 1 mes</small>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="index.js"></script>
+</body>
+
+</html>
