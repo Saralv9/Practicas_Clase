@@ -1,0 +1,33 @@
+h1{
+    text-align: center !important;
+    color: black;
+    text-decoration: underline !important;
+}
+
+body{
+    background-color: cadetblue;
+
+}
+
+h2{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    
+   
+}
+
+h4{
+    color: black;
+    text-align: justify;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+img{
+    width: 800px;
+    height: 500px;
+    margin-left: 400px;
+    margin-right: 100px;
+
+}

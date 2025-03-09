@@ -1,0 +1,46 @@
+
+.card-text{
+    color: rgb(15, 0, 145);
+    font-size: 21px;
+    text-align: justify;
+    font-weight: bold;
+    }
+
+    .card-title{
+        color: black;
+        font-size: 35px;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+    img{
+        margin-top: 50px;
+        margin-left: 10px;   
+     }
+
+     .col-md-4{
+
+        background-color: rgb(235, 145, 255);
+     }
+
+     .col-md-8{
+        background-color: rgb(235, 145, 255);
+     }
+
+     .card mb-3{
+        margin: 0 auto;
+     }
+
+     body{
+        background-color: rgb(235, 145, 255);
+     }
+
+     h1{
+        color: rgb(0, 0, 0) !important;
+        text-align: center;
+        font-size: 70px !important;
+    }
+
+    h1:hover{
+      color: rgb(21, 0, 139) !important;
+    }

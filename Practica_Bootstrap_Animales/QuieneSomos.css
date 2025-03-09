@@ -1,0 +1,31 @@
+h1{
+    color: rgb(0, 8, 156);
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-style: italic;
+}
+
+h1:hover{
+    color: rgb(247, 2, 2);
+    cursor:pointer;
+    
+}
+
+p{
+    text-align: justify !important;
+    margin: 10px auto ;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-weight: bold; 
+   
+}
+
+body{
+    background-color: pink;
+    
+}

@@ -1,0 +1,61 @@
+h1{
+    color: rgb(125, 0, 144) !important;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+h1:hover{
+    color: rgb(255, 0, 0) !important;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+h6{
+    color: rgb(255, 255, 255) !important;
+    size: 80px !important;
+    text-align: center;
+    margin-bottom:  50px; ;
+    margin-top: 20px;
+      
+}
+
+body{
+    background: linear-gradient( pink, aqua);
+}
+
+
+form{
+
+    background-image: url("perritoygatito1.jpg");
+    margin-right: 50px !important;
+    margin-left: 50px !important;
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    background-size: 180% 180%;
+    margin-top: 70px;
+    
+}
+
+#accordionFlushExample{
+  margin: left 90px !important;
+  width: 500px;
+  margin-top: 100px !important;
+   
+}
+
+.contenedor{
+    display: flex !important;
+   align-items: stretch;
+
+}
+
+
+
+
+
+

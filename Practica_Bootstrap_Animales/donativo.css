@@ -1,0 +1,54 @@
+h1{
+    text-align: center !important;
+    font-size: 4em;
+    color: rgb(10, 0, 148);
+    margin-top: 10px;
+}
+
+body{
+    background-color: pink;
+}
+
+form{ 
+    margin: 0 auto !important;
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
+    width: 1000px;
+    height: 550px;
+    text-align: center;
+    background-size: 180% 180%;
+    margin-top: 40px !important;
+    background-color: aqua;
+}
+
+input[type="text"] {
+    width: 800px;
+    height: 20px;
+    margin: 10px;
+}
+
+button{
+    width: 200px !important;
+    cursor: pointer;
+    background-color: rgb(0, 255, 26) !important;
+    border-radius: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+
+}
+
+label{
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+h3{
+    text-align: justify !important;
+    margin-left: 350px;
+    margin-right: 350px;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
